@@ -1,0 +1,114 @@
+[0m[[0m[0minfo[0m] [0m[0mLoading global plugins from /home/hamdi/.sbt/1.0/plugins[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading settings for project product-recommendation-engine-scala-build from plugins.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading project definition from /var/www/html/app_datarea/Product-recommendation-Engine-Scala/project[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading settings for project product-recommendation-engine-scala from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mSet current project to RecommendationSystem (in build file:/var/www/html/app_datarea/Product-recommendation-Engine-Scala/)[0m
+[0m[[0m[0minfo[0m] [0m[0mRunning (fork) reco test37[0m
+[0m[[0m[31merror[0m] [0m[0mUsing Spark's default log4j profile: org/apache/spark/log4j-defaults.properties[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:57 INFO SparkContext: Running Spark version 2.4.0[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:58 INFO SparkContext: Submitted application: recommander[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:58 INFO SecurityManager: Changing view acls to: hamdi[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:58 INFO SecurityManager: Changing modify acls to: hamdi[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:58 INFO SecurityManager: Changing view acls groups to: [0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:58 INFO SecurityManager: Changing modify acls groups to: [0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:58 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hamdi); groups with view permissions: Set(); users  with modify permissions: Set(hamdi); groups with modify permissions: Set()[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:59 INFO Utils: Successfully started service 'sparkDriver' on port 43801.[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:59 INFO SparkEnv: Registering MapOutputTracker[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:59 INFO SparkEnv: Registering BlockManagerMaster[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:59 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:59 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:59 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-0e00e0df-6393-46c0-9eb4-583010bcc6bc[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:59 INFO MemoryStore: MemoryStore started with capacity 1048.8 MB[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:59 INFO SparkEnv: Registering OutputCommitCoordinator[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:59 INFO Utils: Successfully started service 'SparkUI' on port 4040.[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:59 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.100.51:4040[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:23:59 INFO Executor: Starting executor ID driver on host localhost[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:24:00 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35633.[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:24:00 INFO NettyBlockTransferService: Server created on 192.168.100.51:35633[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:24:00 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:24:00 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.100.51, 35633, None)[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:24:00 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.100.51:35633 with 1048.8 MB RAM, BlockManagerId(driver, 192.168.100.51, 35633, None)[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:24:00 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.100.51, 35633, None)[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:24:00 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.100.51, 35633, None)[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:24:00 WARN SparkContext: Using an existing SparkContext; some configuration may not take effect.[0m
+[0m[[0m[0minfo[0m] [0m[0m+---------+--------------------+[0m
+[0m[[0m[0minfo[0m] [0m[0m|productId|               title|[0m
+[0m[[0m[0minfo[0m] [0m[0m+---------+--------------------+[0m
+[0m[[0m[0minfo[0m] [0m[0m|        1|         Tidal Waves|[0m
+[0m[[0m[0minfo[0m] [0m[0m|        2|Six Sonatas For T...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|        3|Double Concerto i...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|        4|Hal Leonard Vival...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|        5|Aida: Opera in Qu...|[0m
+[0m[[0m[0minfo[0m] [0m[0m+---------+--------------------+[0m
+[0m[[0m[0minfo[0m] [0m[0monly showing top 5 rows[0m
+[0m[[0m[0minfo[0m] [0m[0mname=test37[0m
+[0m[[0m[0minfo[0m] [0m[0m-------------------------------------------[0m
+[0m[[0m[0minfo[0m] [0m[0mTime: 1562837068000 ms[0m
+[0m[[0m[0minfo[0m] [0m[0m-------------------------------------------[0m
+[0m[[0m[0minfo[0m] [0m[0mConsumerRecord(topic = test37-customer, partition = 0, offset = 0, CreateTime = 1562836994935, serialized key size = -1, serialized value size = 428, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"userId"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"create_ts"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"update_ts"}],"optional":false,"name":"customer"},"payload":{"userId":1,"create_ts":1562245627000,"update_ts":1562245627000}})[0m
+[0m[[0m[0minfo[0m] [0m[0mConsumerRecord(topic = test37-customer, partition = 0, offset = 1, CreateTime = 1562836994935, serialized key size = -1, serialized value size = 428, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"userId"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"create_ts"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"update_ts"}],"optional":false,"name":"customer"},"payload":{"userId":2,"create_ts":1562272674000,"update_ts":1562272674000}})[0m
+[0m[[0m[0minfo[0m] [0m[0mConsumerRecord(topic = test37-customer, partition = 0, offset = 2, CreateTime = 1562836994935, serialized key size = -1, serialized value size = 428, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"userId"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"create_ts"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"update_ts"}],"optional":false,"name":"customer"},"payload":{"userId":3,"create_ts":1562272687000,"update_ts":1562272687000}})[0m
+[0m[[0m[0minfo[0m] [0m[0mConsumerRecord(topic = test37-customer, partition = 0, offset = 3, CreateTime = 1562836994935, serialized key size = -1, serialized value size = 428, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"userId"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"create_ts"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"update_ts"}],"optional":false,"name":"customer"},"payload":{"userId":4,"create_ts":1562427154000,"update_ts":1562427154000}})[0m
+[0m[[0m[0minfo[0m] [0m[0mConsumerRecord(topic = test37-customer, partition = 0, offset = 4, CreateTime = 1562836994935, serialized key size = -1, serialized value size = 428, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"userId"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"create_ts"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"update_ts"}],"optional":false,"name":"customer"},"payload":{"userId":5,"create_ts":1562430921000,"update_ts":1562430921000}})[0m
+[0m[[0m[0minfo[0m] [0m[0mConsumerRecord(topic = test37-customer, partition = 0, offset = 5, CreateTime = 1562836994935, serialized key size = -1, serialized value size = 428, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"userId"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"create_ts"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"update_ts"}],"optional":false,"name":"customer"},"payload":{"userId":6,"create_ts":1562431632000,"update_ts":1562431632000}})[0m
+[0m[[0m[0minfo[0m] [0m[0mConsumerRecord(topic = test37-customer, partition = 0, offset = 6, CreateTime = 1562836994935, serialized key size = -1, serialized value size = 428, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"userId"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"create_ts"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"update_ts"}],"optional":false,"name":"customer"},"payload":{"userId":7,"create_ts":1562439976000,"update_ts":1562439976000}})[0m
+[0m[[0m[0minfo[0m] [0m[0mConsumerRecord(topic = test37-customer, partition = 0, offset = 7, CreateTime = 1562836994935, serialized key size = -1, serialized value size = 428, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"userId"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"create_ts"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"update_ts"}],"optional":false,"name":"customer"},"payload":{"userId":8,"create_ts":1562754018000,"update_ts":1562754018000}})[0m
+[0m[[0m[0minfo[0m] [0m[0mConsumerRecord(topic = test37-customer, partition = 0, offset = 8, CreateTime = 1562836994935, serialized key size = -1, serialized value size = 428, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"userId"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"create_ts"},{"type":"int64","optional":true,"name":"org.apache.kafka.connect.data.Timestamp","version":1,"field":"update_ts"}],"optional":false,"name":"customer"},"payload":{"userId":9,"create_ts":1562760606000,"update_ts":1562760606000}})[0m
+[0m[[0m[0minfo[0m] [0m[0mKafkaRDD[40] at createDirectStream at reco.scala:129[0m
+[0m[[0m[0minfo[0m] [0m[0m+-------------+-------------+------+[0m
+[0m[[0m[0minfo[0m] [0m[0m|    create_ts|    update_ts|userId|[0m
+[0m[[0m[0minfo[0m] [0m[0m+-------------+-------------+------+[0m
+[0m[[0m[0minfo[0m] [0m[0m|1562245627000|1562245627000|     1|[0m
+[0m[[0m[0minfo[0m] [0m[0m|1562272674000|1562272674000|     2|[0m
+[0m[[0m[0minfo[0m] [0m[0m|1562272687000|1562272687000|     3|[0m
+[0m[[0m[0minfo[0m] [0m[0m|1562427154000|1562427154000|     4|[0m
+[0m[[0m[0minfo[0m] [0m[0m|1562430921000|1562430921000|     5|[0m
+[0m[[0m[0minfo[0m] [0m[0m+-------------+-------------+------+[0m
+[0m[[0m[0minfo[0m] [0m[0monly showing top 5 rows[0m
+[0m[[0m[0minfo[0m] [0m[0mroot[0m
+[0m[[0m[0minfo[0m] [0m[0m |-- create_ts: long (nullable = true)[0m
+[0m[[0m[0minfo[0m] [0m[0m |-- update_ts: long (nullable = true)[0m
+[0m[[0m[0minfo[0m] [0m[0m |-- userId: long (nullable = true)[0m
+[0m[[0m[0minfo[0m] [0m[0mAll the Data from Kafka[0m
+[0m[[0m[0minfo[0m] [0m[0m+------+[0m
+[0m[[0m[0minfo[0m] [0m[0m|userId|[0m
+[0m[[0m[0minfo[0m] [0m[0m+------+[0m
+[0m[[0m[0minfo[0m] [0m[0m|     1|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     2|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     3|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     4|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     5|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     6|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     7|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     8|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     9|[0m
+[0m[[0m[0minfo[0m] [0m[0m+------+[0m
+[0m[[0m[0minfo[0m] [0m[0mrecommandation for user 1[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:24:34 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS[0m
+[0m[[0m[31merror[0m] [0m[0m19/07/11 10:24:34 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS[0m
+[0m[[0m[0minfo[0m] [0m[0m+---------+--------------------+[0m
+[0m[[0m[0minfo[0m] [0m[0m|ProductId|               title|[0m
+[0m[[0m[0minfo[0m] [0m[0m+---------+--------------------+[0m
+[0m[[0m[0minfo[0m] [0m[0m|     2984|Psalm 100 Op 106 ...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     1846|Yamaha PSR240 61-...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     3843|The Best of Richa...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     3303|HOSA PREMIUM MIDI...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|      572|     Piano Concertos|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     1807|      Midnight Blues|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     1547|Just Like A Vacation|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     1930|          Wieniawski|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     1685|Reach Out I'll Be...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     3880|      Symphonies 4-6|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     3782|     Embrace Destiny|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     2101|                Feel|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     3950|          Portrait 2|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     2964| Works for Orchestra|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     2892|Krommer: Partitas...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|      128|Mendelssohn - A M...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|      957|              Vol. 2|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     1329|Chamber Concerto ...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     1943|Alma Gluck: Recor...|[0m
+[0m[[0m[0minfo[0m] [0m[0m|     1152|Yardbirds - Great...|[0m
+[0m[[0m[0minfo[0m] [0m[0m+---------+--------------------+[0m
+[0m[[0m[0minfo[0m] [0m[0monly showing top 20 rows[0m

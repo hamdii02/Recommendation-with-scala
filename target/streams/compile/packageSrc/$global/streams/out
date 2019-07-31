@@ -1,0 +1,13 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /var/www/html/app_web/Product-recommendation-Engine-Scala/target/scala-2.11/recommendationsystem_2.11-0.1-sources.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users.dat[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /var/www/html/app_web/Product-recommendation-Engine-Scala/src/main/resources/users.dat[0m
+[0m[[0m[0mdebug[0m] [0m[0m	reco.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /var/www/html/app_web/Product-recommendation-Engine-Scala/src/main/scala/reco.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ratings.dat[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /var/www/html/app_web/Product-recommendation-Engine-Scala/src/main/resources/ratings.dat[0m
+[0m[[0m[0mdebug[0m] [0m[0m	products.dat[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /var/www/html/app_web/Product-recommendation-Engine-Scala/src/main/resources/products.dat[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MagicML.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /var/www/html/app_web/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

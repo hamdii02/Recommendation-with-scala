@@ -1,0 +1,137 @@
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:2:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.mllib.recommendation.{ALS, MatrixFactorizationModel, Rating}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:3:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.functions.{col, _}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:4:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.{DataFrame, Dataset, SparkSession}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:6:19: not found: type SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m   def getCtx() : SparkSession = {[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:7:6: not found: value SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m     SparkSession.builder.[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:14:16: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  var  movies: DataFrame = null[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:15:17: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  var  ratings: DataFrame = null[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:16:35: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  var  personalNormalizedRatings: DataFrame = null[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:18:16: not found: type MatrixFactorizationModel[0m
+[0m[[0m[31merror[0m] [0m[0m  def train(): MatrixFactorizationModel ={[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:35:32: not found: type Rating[0m
+[0m[[0m[31merror[0m] [0m[0m    val trainRDD = training.as[Rating].rdd[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:40:5: not found: value ALS[0m
+[0m[[0m[31merror[0m] [0m[0m    ALS.train(trainRDD, rank, numIterations, 0.01)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:47:63: not found: type Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  def predict(userId: Int, model : MatrixFactorizationModel): Dataset[Rating] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/MagicML.scala:47:36: not found: type MatrixFactorizationModel[0m
+[0m[[0m[31merror[0m] [0m[0m  def predict(userId: Int, model : MatrixFactorizationModel): Dataset[Rating] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:2:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.kafka.common.serialization.StringDeserializer[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:3:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.log4j.{Level, Logger}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:4:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.ml.tuning.CrossValidatorModel[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:5:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.mllib.recommendation.MatrixFactorizationModel[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:6:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.{SparkConf, SparkContext}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:7:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:8:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.functions.{col, _}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:9:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.types.IntegerType[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:10:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:11:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming.kafka010.KafkaUtils[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:12:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:13:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming.{Seconds, StreamingContext}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:14:12: object elasticsearch is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.elasticsearch.spark.sql.EsSparkSQL[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:18:18: not found: type SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m  def getCtx() : SparkSession = {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:19:5: not found: value SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m    SparkSession.builder.[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:25:26: not found: type SparkConf[0m
+[0m[[0m[31merror[0m] [0m[0m    val  sparkConf = new SparkConf().setAppName("recommander")[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:46:18: not found: type SparkContext[0m
+[0m[[0m[31merror[0m] [0m[0m    val scc= new SparkContext(sparkConf)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:47:16: not found: type SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m    val spark: SparkSession = SparkSession.builder().config(scc.getConf).getOrCreate()[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:47:31: not found: value SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m    val spark: SparkSession = SparkSession.builder().config(scc.getConf).getOrCreate()[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:49:19: not found: type StreamingContext[0m
+[0m[[0m[31merror[0m] [0m[0m    val ssc = new StreamingContext(scc,Seconds(4))[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:49:40: not found: value Seconds[0m
+[0m[[0m[31merror[0m] [0m[0m    val ssc = new StreamingContext(scc,Seconds(4))[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:53:37: not found: type StringDeserializer[0m
+[0m[[0m[31merror[0m] [0m[0m      "key.deserializer" -> classOf[StringDeserializer],[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:54:39: not found: type StringDeserializer[0m
+[0m[[0m[31merror[0m] [0m[0m      "value.deserializer" -> classOf[StringDeserializer],[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:60:5: not found: value Logger[0m
+[0m[[0m[31merror[0m] [0m[0m    Logger.getLogger("org").setLevel(Level.OFF)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:60:38: not found: value Level[0m
+[0m[[0m[31merror[0m] [0m[0m    Logger.getLogger("org").setLevel(Level.OFF)[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:61:5: not found: value Logger[0m
+[0m[[0m[31merror[0m] [0m[0m    Logger.getLogger("akka").setLevel(Level.OFF)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:61:39: not found: value Level[0m
+[0m[[0m[31merror[0m] [0m[0m    Logger.getLogger("akka").setLevel(Level.OFF)[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:88:7: value toDF is not a member of Seq[(String, Double)][0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value toDF'?[0m
+[0m[[0m[31merror[0m] [0m[0m    ).toDF("title", "rating")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:115:15: not found: value MatrixFactorizationModel[0m
+[0m[[0m[31merror[0m] [0m[0m    val model=MatrixFactorizationModel.load(scc,"src/main/ressources/recommander")[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:129:23: not found: value KafkaUtils[0m
+[0m[[0m[31merror[0m] [0m[0m    val inputStream = KafkaUtils.createDirectStream(ssc, PreferConsistent, Subscribe[String, String](Array(args(0)+"-customer"), kafkaParams))[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:129:58: not found: value PreferConsistent[0m
+[0m[[0m[31merror[0m] [0m[0m    val inputStream = KafkaUtils.createDirectStream(ssc, PreferConsistent, Subscribe[String, String](Array(args(0)+"-customer"), kafkaParams))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/var/www/html/app_datarea/Product-recommendation-Engine-Scala/src/main/scala/reco.scala:129:76: not found: value Subscribe[0m
+[0m[[0m[31merror[0m] [0m[0m    val inputStream = KafkaUtils.createDirectStream(ssc, PreferConsistent, Subscribe[String, String](Array(args(0)+"-customer"), kafkaParams))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m45 errors found[0m
